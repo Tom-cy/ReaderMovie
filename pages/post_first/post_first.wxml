@@ -1,0 +1,22 @@
+
+<view class='container'>
+  <image class='head-image' src='{{data.firstImage}}'></image>
+  <image catchtap='onMusic' id='onMusic' class='bj_mic' src="{{isplayMusic?'/images/pei_pic/music-stop.png' :'/images/pei_pic/music_art.png'}}"></image>
+  <view class='author-data'>
+    <image class='avatar' src='{{data.firstavatar}}'></image>
+    <text class='author'>{{data.firstauthor}}</text>
+    <text class='const-text'>发表于</text>
+    <text class='data'>{{data.firstdata}}</text>
+  </view>
+  <text class='title'>{{data.firsttitle}}</text>
+
+  <view class='tool'>
+    <view class='circle-img'>
+      <image catchtap='onshare' class='share' src='/images/pei_pic/share.1.png'></image>
+      <image wx:if="{{collected}}" catchtap='oncollected' class='collect' src='/images/pei_pic/collect.1.png'></image>
+      <image wx:else catchtap='oncollected' class='collect' src='/images/pei_pic/collect.png'></image>
+      <view class='horizon'></view>
+    </view>
+  </view>
+    <text class='detail'>{{data.firstdetail}}</text>
+</view>

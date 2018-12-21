@@ -1,0 +1,27 @@
+<import src="../body_template/body_template.wxml" />
+<view>
+  <swiper class='pic_head' autoplay='true' indicator-dots='true' indicator-color='rgba(0, 0, 0, .5)' indicator-active-color='#00FFFF' interval="3000" circular='true' duration='500'  catchtap='onPicTap'>
+    <swiper-item>
+      <image  data-picid='0' src='/images/img_icon/jn9.jpg'></image>
+    </swiper-item>
+    <swiper-item>
+      <image   data-picid='1' src='/images/img_icon/jn8.jpg'></image>
+    </swiper-item>
+    <swiper-item>
+      <image  data-picid='2' src='/images/img_icon/jn7.jpg'></image>
+    </swiper-item>
+    <swiper-item>
+      <image  data-picid='3' src='/images/img_icon/jn6.jpg'></image>
+    </swiper-item>
+  </swiper>
+
+  <!-- 文章 -->
+
+  <block wx:for="{{all_key}}" wx:key="{{item}}">
+  <view bindtap='onTap' data-id="{{item.id}}">
+    <template is="cont" data="{{...item}}" />
+  </view>
+
+  </block>
+
+</view>

@@ -1,0 +1,25 @@
+<import src="../movie_template/movie_template.wxml" />
+
+<template name="molist_template">
+
+  <view class='movie-list-container'>
+  <view class='inner-container'>
+    <view class='movie-head'>
+    
+      <text class='slogan'>{{category}}</text>
+      <view class='more'>
+        <text catchtap='onMore' data-catery='{{category}}' class='more-text'>更多</text>
+        <image class='more-img' src='/images/pei_pic/arrow-right.png'></image>
+      </view>
+    </view>
+    <view class='movies-container'>
+
+    <block wx:for='{{movie}}' wx:for-item="movie" wx:key="{{this}}">
+      <template is="movie_template" data="{{...movie}}" />
+    </block>
+      <!-- <template is="movie_template" /> -->
+      <!-- <template is="movie_template" /> -->
+    </view>
+    </view>
+  </view>
+</template>

@@ -1,0 +1,14 @@
+@import "../movie_template/movie_template.wxss";
+ 
+.moretemplate{
+  padding-left: 17rpx;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.moviemoretemplate {
+  margin: 40rpx auto;
+}
+.movietemplate{
+  float: left;
+}

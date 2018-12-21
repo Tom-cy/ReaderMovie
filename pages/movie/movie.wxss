@@ -1,0 +1,37 @@
+@import "molist_template/molist_template.wxss";
+ @import "movieGrid/movieGrid.wxss";
+.input {
+  display: flex;
+  flex-direction: row;
+  height: 80rpx;
+  width: 100%;
+  background-color: #f2f2f2;
+}
+
+.searchimg {
+  margin: auto 0 auto 20rpx;
+}
+.xxxxx{
+    margin: auto 25rpx auto 0;
+
+}
+
+.placehold {
+  width: 600rpx;
+  font-size: 14px;
+  color: #000000;
+  margin: auto 0 auto 40rpx;
+}
+
+.container {
+  background-color: #f2f2f2;
+}
+
+.movie-list {
+  margin-bottom: 30rpx;
+}
+.searchmo{
+  position: absolute;
+  top: 80rpx;
+  
+}

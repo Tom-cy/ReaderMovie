@@ -1,0 +1,60 @@
+<import src="../start_template/start_template.wxml" />
+<view class="container">
+  <image class='head-img' src='{{movie.movieImg}}' mode='aspectFill'></image>
+  <view class='head-img-hover'>
+    <text class='main-title'>{{movie.title}}</text>
+    <text class='sub-title'>{{movie.country + " . " +movie.year}}</text>
+    <view class='like'>
+      <text class='highhlight-font'>
+            {{movie.wishCount}}
+          </text>
+      <text class='plain-font'>人喜欢</text>
+      <text class='highhlight-font'>
+          {{movie.wishCount}}
+          </text>
+      <text class='plain-font'>条评论</text>
+    </view>
+  </view>
+  <image catchtap='ViewMoviePostImg' class='movie-img' src='{{movie.movieImg}}' data-src='{{movie.movieImg}}'></image>
+  <!-- 文字简介 -->
+  <view class='summary'>
+    <view class='original-title'>
+      <text>{{movie.originaTitle}}</text>
+    </view>
+    <view class='flex-row'>
+      <text class='mark'>评分</text>
+      <template is="start_template" data="{{stars:movie.stars , score : movie.score }}" />
+    </view>
+    <view class='flex-row'>
+      <text class='mark'>导演</text>
+      <text>{{movie.director.name}}</text>
+    </view>
+    <view class='flex-row'>
+      <text class='mark'>影人</text>
+      <text>{{movie.casts}}</text>
+    </view>
+    <view class='flex-row'>
+      <text class='mark'>类型</text>
+      <text>{{movie.generes}}</text>
+    </view>
+  </view>
+  <view class='hr'></view>
+  <view class='synopsis'>
+    <text style='color:#999'>剧情简介</text>
+    <text class='summary-content'>{{movie.summary}}</text>
+  </view>
+  <view class='hr'></view>
+
+  <!-- 横向视图 -->
+  <view class='acst'>
+    <text class='cast-font'>影人</text>
+    <scroll-view style='width:100%' class='cast-imgs' scroll-x="true">
+      <block wx:for="{{movie.castInfo}}" wx:for-item="item">
+        <view class='cast-container'>
+          <image class='cast-img' src='{{item.img}}'></image>
+          <text class='cast-name'>{{item.name}} </text>
+        </view>
+      </block>
+    </scroll-view>
+  </view>
+</view>

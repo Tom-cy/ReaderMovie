@@ -1,0 +1,6 @@
+
+<view class='user-setting' catchtap='setting'>
+<image src='/images/pei_pic/setting.jpg'></image>
+<text>设置</text>
+
+</view>

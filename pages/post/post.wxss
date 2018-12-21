@@ -1,0 +1,12 @@
+@import "../body_template/body_template.wxss";
+
+.pic_head {
+  width: 100%;
+  height: 400rpx;
+}
+
+.pic_head image {
+  width: 100%;
+  height: 400rpx;
+}
+ 

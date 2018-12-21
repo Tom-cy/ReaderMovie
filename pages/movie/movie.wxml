@@ -1,0 +1,25 @@
+<import src="molist_template/molist_template.wxml" />
+<import src="movieGrid/movieGrid.wxml" />
+
+<view class='input'>
+  <icon class='searchimg' type='search' size='13' color='#405f80'></icon>
+  <input class='placehold' value='{{searchtext}}' placeholder='搜索电影' bindfocus='onBindFocus' bindconfirm="onBindChange">
+  </input>
+  <icon wx:if="{{xxx}}" bindtap='xxxxxx' class='xxxxx' type='cancel' size='20' color='#405f80'></icon>
+</view>
+<view class='container' wx:if="{{bodymovie}}">
+  <view class='movie-list'>
+    <template is="molist_template" data="{{...inTheatersUrl}}" />
+  </view>
+  <view class='movie-list'>
+    <template is="molist_template" data="{{...comingSoonUrl}}" />
+  </view>
+
+  <view class='movie-list'>
+    <template is="molist_template" data="{{...top250Url}}" />
+  </view>
+</view>
+
+<view class='searchmo'>
+  <template is="movieGridtemplate" data="{{...searchUrl}}" wx:if="{{searchmovie}}" />
+</view>

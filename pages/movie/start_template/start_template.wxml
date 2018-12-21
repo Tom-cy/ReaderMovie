@@ -1,0 +1,16 @@
+<template name="start_template">
+  <view class='star-container'>
+    <view class='stars' >
+    <block wx:for="{{stars}}" wx:for-item='item' wx:key="{{this}}">
+      
+      <image wx:if="{{item}}" src='/images/pei_pic/star.png'></image>
+      <image wx:else src='/images/pei_pic/none-star.png'></image>
+    </block>
+      <!-- <image src='/images/pei_pic/star.png'></image>
+      <image src='/images/pei_pic/star.png'></image>
+      <image src='/images/pei_pic/star.png'></image>
+      <image src='/images/pei_pic/star.png'></image> -->
+    </view>
+    <text class='starsfont'>{{movieaverage}}</text>
+  </view>
+</template>

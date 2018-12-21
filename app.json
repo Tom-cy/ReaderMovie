@@ -1,0 +1,51 @@
+{
+  "pages": [
+    "pages/movie/movie",
+    "pages/mv/mv",
+    "pages/movie-more/movie-more",
+    "pages/movie/movie-detail/movie-detail",
+    "pages/post/post",
+    "pages/welcome/welcome",
+    "pages/user/user",
+    "pages/user/user_set/user_set",
+    "pages/user/user_safe/user_safe",
+    "pages/post_first/post_first"
+     
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#ADADAD",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "Tom_cyのMovie",
+    "backgroundColor": "#cccccc",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": false
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/post/post",
+        "text": "阅读",
+        "iconPath": "images/BarBara/message_normal.png",
+        "selectedIconPath": "images/BarBara/message_active.png"
+      },
+      {
+        "pagePath": "pages/movie/movie",
+        "text": "电影",
+        "iconPath": "images/BarBara/popular_icon.png",
+        "selectedIconPath": "images/BarBara/popular_active_icon.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "用户",
+        "iconPath": "images/BarBara/person_normal.png",
+        "selectedIconPath": "images/BarBara/person_active.png"
+      },
+      {
+        "pagePath": "pages/mv/mv",
+        "text": "MV-Show",
+        "iconPath": "images/BarBara/coming_icon.png",
+        "selectedIconPath": "images/BarBara/coming_active_icon.png"
+      }
+    ]
+  }
+}

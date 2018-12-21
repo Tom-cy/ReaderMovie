@@ -1,0 +1,25 @@
+@import "../start_template/start_template.wxss";
+
+.movie-container{
+  display: flex;
+  flex-direction: column;
+  padding: 0 20rpx;
+  /* float:left; */
+
+}
+.second{
+
+}
+.movie-img{
+  width: 200rpx;
+  height: 270rpx;
+  border-bottom: 20rpx;
+}
+.movie-img{
+  
+}
+.movie-title{
+  margin-top: 10rpx;
+  margin-bottom: 6rpx;
+  font-size: 32rpx;
+}

@@ -1,0 +1,22 @@
+<template name = "cont">
+       <view class='body_par'>
+    <!-- body_template模板 -->
+   <!-- 人物头像 -->
+        <view class='body_par_author_data'>
+             <image class='body_par_author' src='{{author}}'></image>
+             <text class='body_par_txt'>{{date}}</text>
+        </view>
+        <!-- 图片内容 -->
+              <text class='body_par_title'>{{title}}</text>
+              <image class='body_par_pic' src='{{imgSrc}}'></image>
+              <text class='body_par_shi'>{{content}}</text>
+        <view class='body_par_like'>
+        <!-- 小心心之内 -->
+              <image class='body_par_like_img' src='{{like1}}'></image>
+              <text class='body_par_like_font'>{{reading}}</text>
+              <image class='body_par_like_img' src='{{like2}}'></image>
+              <text class='body_par_like_font'>{{collection}}</text>
+        </view>
+
+  </view>
+</template>
